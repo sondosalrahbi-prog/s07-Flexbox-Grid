@@ -1,1 +1,59 @@
-/* TODO: build .dashboard with CSS Grid and grid-template-areas to match the mockup */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: repeat(2, 134px);
+    gap: 20px;
+    padding: 31px;
+
+}
+
+.chart-panel {
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.panel {
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+.panel h3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #6b7280;
+    text-transform: uppercase;
+}
+
+.panel p {
+    margin: 8px 0 0;
+    font-size: 28px;
+    color: #111827;
+}
+
+.chart-panel h2 {
+    margin: 0 0 14px;
+    font-size: 16px;
+}
+
+.img-placeholder {
+    flex: 1;
+    min-width: 0;
+    background: linear-gradient(to right,
+            #bfdbfe,
+            #93c5fd);
+            border-radius: 10px;
+} 
